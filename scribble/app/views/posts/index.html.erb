@@ -1,0 +1,15 @@
+<h2>Posts <%= link_to image_tag("plus.png", class: "icon-photo"), new_post_path %></h2>
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class="post-header">
+      <span><%= link_to "#{post.title}", post_path(post) %> <%= post.created_at %></span>
+    </div>
+
+    <%= link_to image_tag(post.photo_url, class: "post-photo"), post_path(post) %>
+
+    <div class="post-edit-delete">
+      <a href="/posts/<%= post.id %>/edit">Edit</a>
+    </div>
+  </div>
+<% end %>

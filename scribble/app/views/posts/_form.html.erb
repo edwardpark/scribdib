@@ -1,0 +1,12 @@
+<%= form_for (@post) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.label :photo_url, "Photo URL" %>
+  <%= f.text_field :photo_url %>
+
+  <%= f.submit "Create" %>
+<% end %>

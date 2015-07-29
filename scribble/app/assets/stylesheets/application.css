@@ -13,3 +13,131 @@
  *= require_tree .
  *= require_self
  */
+ body {
+   font-family: Montserrat, Helvetica, sans-serif;
+   font-size: 18px;
+   color: #777;
+ }
+
+ .container {
+   width: 50%;
+   margin: 0 auto;
+ }
+
+ h1 {
+   margin: 20px 0px 0px 0px;
+   text-align: center;
+ }
+
+ h1 a {
+   color: #777;
+   text-decoration: none;
+ }
+
+ h2 {
+    margin: 0px 0px 20px 0px;
+  }
+
+ .new-post {
+   display: table;
+   margin: 0 auto;
+   border-radius: 5px;
+   padding: 0 6px;
+   text-decoration: none;
+   text-align: center;
+   line-height: 30px;
+   background-color: #777;
+   color: white;
+ }
+
+ .post {
+   margin-bottom: 2em;
+   border: 5px #E2E2E2 solid;
+   padding: 1em;
+ }
+
+ .post-header, .post-edit-delete {
+   display: block;
+ }
+
+ .post-header {
+   margin-bottom: 1em;
+ }
+
+ .post-header > span {
+   display: block;
+ }
+
+ .post-header span:nth-child(2) {
+   font-size: 0.7em;
+ }
+
+ .post-header a, .container a {
+    color: #BBB;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+ .post-posted-by {
+   font-weight: 100;
+   color: black;
+ }
+
+ .post-photo {
+   width: 100%;
+ }
+
+ .post-edit-delete {
+   margin-bottom: 1em;
+ }
+
+ .post-edit-delete a {
+   float: left;
+   display: inline-block;
+   border-radius: 5px;
+   padding: 0 6px;
+   text-decoration: none;
+   text-align: center;
+   font-size: 0.8em;
+   line-height: 20px;
+   color: white;
+   background-color: #777;
+ }
+
+ .post-edit-delete button {
+   float: right;
+   display: inline-block;
+   border: none;
+   border-radius: 5px;
+   padding: 0 6px;
+   text-decoration: none;
+   text-align: center;
+   font-family: "Montserrat", Helvetica, sans-serif
+   font-size: 2em;
+   line-height: 20px;
+   color: white;
+   background-color: #777;
+ }
+
+ .icon-photo {
+   width: 25px;
+   margin-bottom: -4px;
+ }
+
+ input {
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 9px;
+  border: solid 1px black;
+  width: 300px;
+  background: whitesmoke;
+ }
+
+input[type=submit] {
+  width: auto;
+  padding: 9px 15px;
+  background-color: gray;
+  border: 0;
+  font-size: 14px;
+  color: #FFFFFF;
+ }
