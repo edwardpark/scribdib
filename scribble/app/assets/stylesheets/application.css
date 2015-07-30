@@ -13,70 +13,110 @@
  *= require_tree .
  *= require_self
  */
- body {
-   font-family: Montserrat, Helvetica, sans-serif;
-   font-size: 18px;
-   color: #777;
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
+body {
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777;
  }
 
- .container {
-   width: 50%;
-   margin: 0 auto;
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
  }
 
- h1 {
-   margin: 20px 0px 0px 0px;
-   text-align: center;
- }
+.content {
+  display: inline-block;
+  width: 70%;
+  padding-top: 50px;
+}
 
- h1 a {
-   color: #777;
-   text-decoration: none;
- }
+.sidebar {
+  width: 20%;
+  float: left;
+  padding: 20px;
+  margin: 10px;
+}
 
- h2 {
-    margin: 0px 0px 20px 0px;
-  }
+.sidebar_post {
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  border-bottom: 1px #7a7c7e solid;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
 
- .new-post {
-   display: table;
-   margin: 0 auto;
-   border-radius: 5px;
-   padding: 0 6px;
-   text-decoration: none;
-   text-align: center;
-   line-height: 30px;
-   background-color: #777;
-   color: white;
- }
+h1 {
+  margin: 20px 0px 0px 0px;
+}
 
- .post {
-   margin-bottom: 2em;
-   border: 5px #E2E2E2 solid;
-   padding: 1em;
- }
+h1 a {
+  color: #777;
+  text-decoration: none;
+}
 
- .post-header, .post-edit-delete {
-   display: block;
- }
+h2 {
+  margin: 0px 0px 20px 0px;
+}
 
- .post-header {
-   margin-bottom: 1em;
- }
+h3 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+}
 
- .post-header > span {
-   display: block;
- }
+.new-post {
+  display: table;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 0 6px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  background-color: #777;
+  color: white;
+}
 
- .post-header span:nth-child(2) {
-   font-size: 0.7em;
- }
+.post {
+  margin-bottom: 2em;
+  border-bottom: 1px #7a7c7e solid;
+  padding-bottom: 3em;
+}
 
- .post-header a, .container a {
-    color: #BBB;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
+.post p {
+  margin-bottom: 2em;
+  font-family: 'Lato', sans-serif;
+  font-size: .75em;
+  line-height: 1.75em;
+}
+
+.post-header, .post-edit-delete {
+  display: block;
+}
+
+.post-header {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.post-header > span {
+  display: block;
+}
+
+.post-header span:nth-child(2) {
+  font-size: 0.7em;
+}
+
+.post-header a, .container a {
+  color: #BBB;
+  text-decoration: none;
+}
 
  .post-posted-by {
    font-weight: 100;
@@ -118,6 +158,11 @@
    color: white;
    background-color: #777;
  }
+
+ .post-header p {
+    font-size: .7em;
+    margin: 5px;
+  }
 
  .icon-photo {
    width: 25px;

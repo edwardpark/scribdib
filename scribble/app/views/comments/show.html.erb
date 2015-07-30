@@ -1,6 +1,11 @@
 <h3>Comments</h3>
 
-<h2><%= @comment.subject %> <a href="/comments/<%= @comment.id %>/edit">(edit)</a></h2>
+<h2><%= @comment.subject %> <%= link_to "(edit)", edit_user_comment_path %></h2>
+
 <h3>By: <%= @comment.user_id %></h3>
 
 Comment: <%= @comment.comment %></br>
+
+<%= form_for [@user, @comment], method: :delete do |f| %>
+  <%= f.submit "Delete Comment!", class: "button-delete" %>
+<% end %>

@@ -1,16 +1,20 @@
-<h3><%= @post.title %> <%= link_to "(edit)", edit_post_path %></h3>
+<div class="post">
+  <div class="post-header">
+  <%= @post.title %> <%= link_to "(edit)", edit_post_path %></h3>
+  </div>
 
-<%= image_tag @post.photo_url, class: "post-photo" %>
+  <%= image_tag @post.photo_url, class: "post-photo" %>
 
-<h5><%= @post.content %></h5>
+  <p><%= @post.content %></p>
 
 
-<h3>Comments <%= link_to "(+)", new_user_comment_path(@post) %></h3>
-<ul>
-  <% @comments.each do |comment| %>
-    <li>
-      <%= link_to "#{comment.subject} (#{comment.comment})", user_comment_path(@user, comment) %>
-    </li>
+  <h3>Comments <%= link_to "(+)", new_user_comment_path(@post) %></h3>
+  <ul>
+    <% @comments.each do |comment| %>
+      <li>
+        <%= link_to "#{comment.subject} (#{comment.comment})", user_comment_path(@user, comment) %>
+      </li>
 
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>

@@ -22,7 +22,27 @@ class CommentsController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:user_id])
     @comment = Comment.find(params[:id])
+  end
+
+  def edit
+    @user = User.find(params[:user_id])
+    @comment = Comment.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:user_id])
+    @comment = Comment.find(params[:id])
+    @comment.update(comment_params)
+    @post = Post.find(params[:id])
+    redirect_to post_comment_path(@post)
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    redirect_to posts_path
   end
 
   private
