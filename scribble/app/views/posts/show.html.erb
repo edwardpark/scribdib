@@ -3,3 +3,14 @@
 <%= image_tag @post.photo_url, class: "post-photo" %>
 
 <h5><%= @post.content %></h5>
+
+
+<h3>Comments <%= link_to "(+)", new_user_comment_path(@post) %></h3>
+<ul>
+  <% @comments.each do |comment| %>
+    <li>
+      <%= link_to "#{comment.subject} (#{comment.comment})", user_comment_path(@user, comment) %>
+    </li>
+
+  <% end %>
+</ul>
