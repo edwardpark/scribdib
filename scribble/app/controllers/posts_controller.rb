@@ -7,6 +7,7 @@ class PostsController < ApplicationController
     @user = current_user
     @post = Post.find(params[:id])
     @comments = Comment.all
+    @comment = Comment.find(params[:id])
   end
 
   def new
